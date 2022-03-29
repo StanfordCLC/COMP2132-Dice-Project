@@ -1,0 +1,103 @@
+
+/*CSS For Assignment--------------------------------------------------*/
+.winnerpopup{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 30px;
+    background-color: rgb(10, 10, 10);
+    border: 15px solid rgb(150, 150, 150);
+
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width:80%;
+    height:80%;
+    opacity: 0;
+}
+.winnerimg{
+    max-width: 25%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    border: 15px double rgb(255, 166, 0);
+    border-radius: 20px; 
+}
+.wintext{
+    font-size: 100px;
+}
+.playerimg{
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 15px double rgb(150, 150, 150);
+    border-radius: 20px;
+}
+.diceimg{
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 40px;
+}
+.dicetable{
+    margin-left: auto;
+    margin-right: auto;
+}
+.dicetable tr td{
+    text-align: center;
+}
+.centeritem{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.none{
+    margin: 10px;
+    padding: 10px;
+    border: none;
+    width: 80%;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+}
+.none td{
+    border: none;
+    text-align: center;
+    padding: 5px;
+}
+.custbutton{
+    height: 30px;
+    width: 150px;
+    font-size: 20px;
+    color: #fff;
+    background-color: #323c4e;
+}
+.custbutton:hover{
+    height: 30px;
+    width: 150px;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    background-color: #ceb900;
+}
+.custbutton:disabled{
+    height: 30px;
+    width: 150px;
+    font-size: 20px;
+    color: rgb(65, 65, 65);
+    background-color: #616161;
+}
+
+
+@media screen and (max-width: 690px){
+    .wintext{
+        font-size: 25px;
+    }
+}
+

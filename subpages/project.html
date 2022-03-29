@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--Base setting-->
+        <title>COMP 2132 - Stanford</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../css/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--Webicon-->
+        <link rel="shortcut icon" href="images/webicon.png">
+        <!--Font icon-->
+        <script src="https://kit.fontawesome.com/13af7a35cb.js" crossorigin="anonymous"></script>
+        <!--Google font link-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+        <!--jQuery Script-->
+        <!--<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous" defer="defer"></script>-->
+        <script src="../javascript/jQuery-3.6.0.js" defer="defer"></script>
+        <!--Lightbox-->
+        <link href="../javascript/lightbox/dist/css/lightbox.css" rel="stylesheet" />
+        <!--JavaScript-->
+        <script src="../javascript/lightbox/dist/js/lightbox-plus-jquery.js" defer="defer"></script>
+        <!--JavaScript for assignment-->
+        <script src="../javascript/project.js" defer="defer"></script>
+    </head>
+    <body>
+        <!--No JavaScript warning-->
+        <noscript>
+            <div class="warning warning-no-script"> 
+                <p>Oh no! It's definitely time to panic...</p>
+                <h2>Javascript Is Disabled!</h2>
+				<p>This page requires JavaScript to run.</p>
+				<p>Please <a href="https://www.whatismybrowser.com/guides/how-to-enable-javascript/">enable javascript</a> in your browser then refresh this page.</p>				
+            </div>
+        </noscript>
+        <!--Nav area-->
+        <header>
+            <div class="nav_wrap"> 
+                <nav>
+                    <input type="checkbox" id="show_menu">
+                    <label for="show_menu" class="menu_icon"><i class="fas fa-bars"></i></label>
+                    <div class="nav_content">
+                        <div class="nav_logo"><a href="../index.html">╟§╢</a></div>
+                        <ul>
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="aboutme.html">About me</a></li>
+                            <li><a href="project.html">Project</a></li>
+                        </ul>
+                    </div>  
+                    <a href="../index.html" class="home_icon"><i class="fas fa-home"></i></a> 
+                </nav>
+            </div>
+        </header>
+        <!--Head Banner-->
+        <img src="images/assignmentheadbanner.png" alt="headbanner" class="head_banner">
+        <!--Main content-->
+        <main>
+            <div class="body_wrap">
+                <h2>Happy Dice Game</h2>
+                <p>
+                    The way of winning the game is having the largest total score after rolling dice three times. <br>
+                    You can be either player 01 or player 02.
+                </p>
+                <div class="gridboxS2">
+                    <article class="gs2box_01">
+                        <h2 class="centeritem">Player 01</h2>
+                        <img src="images/player-1-1.png" alt="Player01" class="playerimg" id="player1profile">
+                        <p  id="player1totalscore">Total Score: 0</p>
+                    </article>
+                    <article class="gs2box_02">
+                        <h3 class="centeritem" id="playdice">Round: </h3>
+                        <table class="dicetable">
+                            <tr>
+                                <th>D1</th>
+                                <th>D2</th>
+                            </tr>
+                            <tr>
+                                <td><img src="images/dice-1-0.png" alt="dice1-1" class="diceimg" id="dice11"></td>
+                                <td><img src="images/dice-2-0.png" alt="dice2-1" class="diceimg" id="dice21"></td>
+                            </tr>
+                            <tr>
+                                <td><img src="images/dice-1-0.png" alt="dice1-2" class="diceimg" id="dice12"></td>
+                                <td><img src="images/dice-2-0.png" alt="dice2-2" class="diceimg" id="dice22"></td>
+                            </tr>
+                            <tr>
+                                <th>Round Score</th>
+                                <th>Round Score</th>
+                            </tr>
+                            <tr>
+                                <td id="player1subscore">0</td>
+                                <td id="player2subscore">0</td>
+                            </tr>
+                        </table>
+                        <table class="none">
+                            <tr>
+                                <td><button class="custbutton" id="rollbutton">Roll Dice</button></td>
+                                <td><button class="custbutton" id="rebutton">Restart</button></td>
+                            </tr>
+                        </table>
+                        
+                        
+                    </article>
+                    <article class="gs2box_03">
+                        <h2 class="centeritem">Player 02</h2>
+                        <img src="images/player-2-1.png" alt="Player02" class="playerimg" id="player2profile">
+                        <p  id="player2totalscore">Total Score: 0</p>
+                    </article>
+                </div>
+                <div class="winnerpopup" id="popup">
+                    <p id="winner" class="wintext">Player X Win</p>
+                    <img src="images/player-3-1.png" alt="winner" class="winnerimg" id="winnerprofile">
+                    <button class="custbutton" id="popuprebutton">Restart</button>
+                    <button class="custbutton" id="popupclosebutton">Close</button>
+                </div>
+            </div>
+        </main>
+        <!--Footer--> 
+        <footer>
+            <table class="footer_table"> 
+                <tr>
+                    <th class="footer_th">Aurthor</th>
+                    <th class="footer_th">BCIT Number</th>
+                    <th class="footer_th">BCIT E-mail</th>
+                    <th class="footer_th">Course Code</th>
+                </tr>
+                <tr>
+                    <td class="footer_td">Chin-Lin Cheng (Stanford)</td>
+                    <td class="footer_td">A01032164</td>
+                    <td class="footer_td">ccheng169@my.bcit.ca</td>
+                    <td class="footer_td">COMP 2132</td>
+                </tr>
+            </table>
+            <p class="footer_text">
+                Author: Chin-Lin Cheng (Stanford) <br>
+                BCIT number: A01032164 <br>
+                E-mail: ccheng169@my.bcit.ca <br>
+                Crouse Code: COMP 1850 <br>
+            </p>
+        </footer>  
+    </body>
+</html>
